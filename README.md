@@ -36,3 +36,28 @@ openssl genrsa -out xiaomiKey.pem 2048
 openssl req -new -key xiaomiKey.pem -out xiaomi.csr
 openssl x509 -req -in xiaomi.csr -CA JaimeCA.pem -CAkey JaimeCAKey.pem -CAcreateserial -out xiaomi.pem -days 10238 -sha256
 ```
+
+In addition to all of this, it is needed to generate a package to include the firmware. In order to do this, you need to create a version.json file like the following:
+```
+{"NormalVersion":
+    {
+        "CtrlVersionCode":["0200","26024"],
+        "BleVersionCode":["0068","23948"],
+        "BmsVersionCode":["0207","13100"]
+    },
+"TestVersion":
+    {
+        "CtrlVersionCode":["0200","26024"],
+        "BleVersionCode":["0053","23840"],
+        "BmsVersionCode":["0103","13071"]
+    },
+"TestDevice":
+    [{"serial":"M1GCA1601C0001","id":"0","name":"haley"},
+     {"serial":"M1GCA1601C0002","id":"0","name":"haley"},
+     {"serial":"M1GCA1601C0003","id":"0","name":"haley"},
+     {"serial":"M1GCA16062D8AC","id":"0","name":"haley"}]
+}
+```
+
+Where ```CtrlVersionCode``` indicates the firmware version and size of the .bin file, ```BleVersionCode``` indicates the version of the Bluetooth communication module and ```BmsVersionCode``` indicates the BMS Version.
+Once you have the .json file with the corresponding .bin files, it is needed to zip them and calculate the MD5 sum of the resulting package. That will be required by the application to verify the integrity of the package.
