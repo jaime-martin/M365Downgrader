@@ -5,6 +5,7 @@ The files and documents in this repository are published under the terms of the 
 Los archivos y documentos publicados aquí estan publicados bajo la licencia GNU Lesser General Public License.
 
 In order to use the data of this repository, please indicate the source and give the corresponding credits.
+
 **It is ABSOLUTELLY PROHIBITED the usage of this repository for commercial usage.**
 
 The intent of this repository is to create a proxy program that allows you to intercept the miHome <-> xiaomi communication and will be able to modify it in order to inject a custom firmware to be sent to the M365 scooter.
