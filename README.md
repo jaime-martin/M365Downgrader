@@ -1,8 +1,6 @@
 # M365Downgrader
 
-The files and documents in this repository are published under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
-
-Los archivos y documentos publicados aquí estan publicados bajo la licencia GNU Lesser General Public License.
+The files and documents in this repository are published under the terms of the [Creative Commons License](https://creativecommons.org/licenses/by-nc/2.0/).
 
 In order to use the data of this repository, please indicate the source and give the corresponding credits.
 
