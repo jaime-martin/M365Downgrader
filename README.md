@@ -1,6 +1,6 @@
 # M365Downgrader
 
-The files and documents in this repository are published under the terms of the [Creative Commons License](https://creativecommons.org/licenses/by-nc/2.0/).
+The files and documents in this repository are published under the terms of the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
 
 In order to use the data of this repository, please indicate the source and give the corresponding credits.
 
