@@ -1,0 +1,21 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "Downgrader Proxy",
+  "author": "Jaime Martin<jjma1e@gmail.com>",
+  "main": "proxy2.js",
+  "scripts": {
+    "start": "node proxy2.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.6.5",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "http-proxy": "^1.16.2",
+    "https": "^1.0.0",
+    "minimist": "^1.2.0",
+    "tls": "0.0.1",
+    "transformer-proxy": "^0.3.4"
+  }
+}
